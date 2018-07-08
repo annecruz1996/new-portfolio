@@ -1,0 +1,27 @@
+<html>
+<head>
+<style>
+.animal {
+    font-size: 100px;
+}
+#signin {
+    background-color: cyan;
+}
+.cat {
+    background-color: sandybrown;
+}
+</style>
+</head>
+<body>
+<button id="marianne">Ring Doorbell</button>
+<script>
+    var marianne = document.getElementById('marianne');
+    function openDoor(e){   
+        alert(e);
+    }
+    marianne.addEventListener('mouseup', openDoor);
+</script>
+<div class="animal">Dog</div>
+<div class="animal cat">Cat</div>
+</body>
+</html>

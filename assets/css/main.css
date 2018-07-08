@@ -2175,6 +2175,8 @@ input, select, textarea {
 				border-radius: 100%;
 				display: block;
 				width: 100%;
+				/* padding-top: 100%; */
+				/* overflow: hidden; */
 			}
 
 		.image.main {
