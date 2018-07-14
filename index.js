@@ -129,13 +129,14 @@ new Vue({
 new Vue({
     el: '#five',
     data: {
-        counter: 0,
+        counter: localStorage.getItem("counter-value") || 0,
         title: 'Cheer me on as I build and update this website!'
         
     },
     methods: {
         newvisitor: function() {
             this.counter=this.counter+1;
+            localStorage.setItem("counter-value", this.counter)
         }
     }
 });
